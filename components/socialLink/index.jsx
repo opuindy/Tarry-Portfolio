@@ -15,7 +15,12 @@ const SocialLink = () => {
             <motion.div key={id} whileTap={{ scale: 0.8 }}>
               <Link href={link}>
                 <a target='_blank' rel='noopener noreferrer'>
-                  <Image src={image} width='100%' height='100%' />
+                  <Image
+                    src={image}
+                    width='100%'
+                    height='100%'
+                    alt='link logo'
+                  />
                 </a>
               </Link>
             </motion.div>

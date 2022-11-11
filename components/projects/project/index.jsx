@@ -213,7 +213,12 @@ const Project = ({
                     delay='200'
                     direction=' down'
                   >
-                    <Image src={browser} width='100%' height='100%' />
+                    <Image
+                      src={browser}
+                      width='100%'
+                      height='100%'
+                      alt='browser-logo'
+                    />
                   </Tooltip>
                 </div>
               </a>
@@ -234,6 +239,7 @@ const Project = ({
                       height='100%'
                       objectFit='contain'
                       className={styles.info__img}
+                      alt='code logo'
                     />
                   </div>
                 </Tooltip>
