@@ -47,7 +47,7 @@ const Form = () => {
       };
       submitMessage();
     }
-  }, [formErrors, isSubmitting]);
+  }, [formErrors, isSubmitting, response]);
 
   return (
     <form className={styles.form}>

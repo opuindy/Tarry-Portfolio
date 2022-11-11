@@ -132,7 +132,7 @@ const HomeBanner = () => {
           className={styles.info__paragraph2}
           variants={infoChildrenVariants}
         >
-          I'm specialized in building exceptional digital experiences and
+          I am specialized in building exceptional digital experiences and
           currently focused on building responsive front-end web applications.
         </motion.p>
         <motion.div

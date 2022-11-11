@@ -135,7 +135,7 @@ const Navbar = () => {
             initial='hidden'
             animate='visible'
           >
-            <Image src={myLogos} className={styles.img} />
+            <Image src={myLogos} className={styles.img} alt='logo' />
           </motion.div>
           <motion.div
             variants={navBtnVariant}

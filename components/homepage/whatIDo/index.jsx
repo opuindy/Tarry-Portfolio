@@ -39,7 +39,7 @@ const WhatIDo = () => {
         animate={animation}
         viewport={{ once: true, amount: 1 }}
       >
-        Here's What I Do
+        Here is What I Do
       </motion.h2>
       {data.map((dataItem) => {
         return <HereIsWhatIDo dataItem={dataItem} key={dataItem.id} />;

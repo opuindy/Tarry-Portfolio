@@ -46,7 +46,7 @@ const BackToTop = () => {
       animate='visible'
       onClick={handleNavigate}
     >
-      <Image src={arrow2} />
+      <Image src={arrow2} alt='arrow logo' />
     </motion.section>
   );
 };
