@@ -3,7 +3,7 @@ import { links } from '../utilities/utils';
 import Link from 'next/link';
 import styles from './navBarStyles.module.scss';
 import Image from 'next/image';
-import myLogos from '../../public/images/myLogos.png';
+import myLogo from '../../public/images/myLogos.PNG';
 import { motion } from 'framer-motion';
 
 const Navbar = () => {
@@ -135,7 +135,7 @@ const Navbar = () => {
             initial='hidden'
             animate='visible'
           >
-            <Image src={myLogos} className={styles.img} alt='logo' />
+            <Image src={myLogo} className={styles.img} alt='logo' />
           </motion.div>
           <motion.div
             variants={navBtnVariant}
