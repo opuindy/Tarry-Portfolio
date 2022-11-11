@@ -1,0 +1,19 @@
+@use '../../../styles/abstract/' as a;
+
+.section {
+  height: max-content;
+  width: 100%;
+  margin-top: 3em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  gap: a.rem(20);
+}
+
+.title {
+  text-align: center;
+  margin-inline: auto;
+  margin-bottom: 0;
+  font-size: clamp(a.rem(33), a.rem(16) + 2vw, a.rem(45));
+}

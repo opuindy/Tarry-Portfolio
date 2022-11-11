@@ -1,0 +1,26 @@
+@use '../../styles/abstract/' as a;
+
+.container {
+  height: 2.5rem;
+  width: 2.5rem;
+  background: var(--text);
+  position: fixed;
+  top: 80vh;
+  left: 85vw;
+  border-radius: 50%;
+  z-index: 2;
+
+  @include a.breakpoint(tablet) {
+    height: 3.5rem;
+    width: 3.5rem;
+    left: 90vw;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.vanish {
+  display: none;
+}

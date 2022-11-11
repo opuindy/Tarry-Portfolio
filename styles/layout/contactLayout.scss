@@ -1,0 +1,21 @@
+@use '../abstract/' as a;
+
+.contactLayout {
+  width: 100%;
+  // min-height: calc(100vh - a.rem(100));
+  min-height: max-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: rem(20);
+  @include a.breakpoint(tablet) {
+    flex-direction: row;
+    min-height: 60vh;
+  }
+
+  @include a.breakpoint(desktop) {
+    flex-direction: row;
+    min-height: 70vh;
+  }
+}

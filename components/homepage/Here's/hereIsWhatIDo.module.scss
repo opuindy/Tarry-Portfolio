@@ -1,0 +1,91 @@
+@use '../../../styles/abstract/' as a;
+
+.imgContainer {
+  width: min(100%, a.rem(550));
+  min-height: 45vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @include a.breakpoint(tablet) {
+    min-height: 50vh;
+  }
+
+  @include a.breakpoint(tablet) {
+    min-height: 70vh;
+  }
+}
+
+.info {
+  width: min(100%, a.rem(550));
+  min-height: 45vh;
+  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2em;
+
+  @include a.breakpoint(tablet) {
+    min-height: 55vh;
+    align-items: flex-start;
+    margin-top: 0;
+  }
+
+  @include a.breakpoint(tablet) {
+    min-height: 70vh;
+  }
+
+  &__text {
+    font-size: clamp(a.rem(25), a.rem(16) + 2vw, a.rem(30));
+    margin-bottom: 1em;
+    text-align: center;
+    @include a.breakpoint(tablet) {
+      text-align: left;
+    }
+  }
+
+  &__imageContainer {
+    width: 100%;
+    height: max-content;
+    display: flex;
+    gap: 1.5rem;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+
+    .img {
+      width: min(4rem);
+      height: min(4rem);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 1em;
+
+      @include a.breakpoint(tablet) {
+        margin-left: 0;
+      }
+
+      .image {
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  &__skillTextContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    p {
+      font-size: clamp(a.rem(16), a.rem(16) + 6vw, a.rem(18));
+      text-align: center;
+      @include a.breakpoint(tablet) {
+        text-align: left;
+      }
+    }
+  }
+}

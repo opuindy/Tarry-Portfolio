@@ -1,0 +1,50 @@
+@use '../../../styles/abstract/' as a;
+
+.form {
+  width: 100%;
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1.8em;
+
+  &__container {
+    width: 100%;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: 1.5em;
+  }
+
+  &__buttonContainer {
+    width: 11rem;
+    height: 2.2rem;
+    background: var(--secondary-text);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: a.rem(5);
+    font-size: a.rem(15);
+
+    @include a.breakpoint(tablet) {
+      margin-right: auto;
+      width: 13rem;
+      height: 2.5rem;
+    }
+  }
+
+  &__button {
+    @include a.button;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  &__span {
+    font-size: clamp(a.rem(13), a.rem(14) + 1vw, a.rem(14));
+    @include a.textGradient;
+  }
+}

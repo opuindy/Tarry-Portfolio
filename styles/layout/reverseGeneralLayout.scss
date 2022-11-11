@@ -1,0 +1,27 @@
+@use '../abstract/' as a;
+
+.reverseGeneralLayout {
+  width: 100%;
+  min-height: calc(100vh - a.rem(100));
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: rem(20);
+  margin-top: 1em;
+  margin-bottom: 3em;
+
+  @include a.breakpoint(tablet) {
+    flex-direction: row-reverse;
+    min-height: 60vh;
+    margin-block: 1.5em;
+    margin-bottom: 4em;
+  }
+
+  @include a.breakpoint(desktop) {
+    flex-direction: row-reverse;
+    min-height: 70vh;
+    margin-block: 2em;
+    margin-bottom: 5em;
+  }
+}

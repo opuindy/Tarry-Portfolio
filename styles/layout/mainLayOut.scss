@@ -1,0 +1,7 @@
+@use '../abstract/' as a;
+
+.mainLayOut {
+  min-height: calc(100vh - a.rem(100));
+  width: min(100% - a.rem(40), a.rem(1300));
+  margin-inline: auto;
+}

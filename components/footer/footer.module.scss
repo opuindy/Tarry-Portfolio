@@ -1,0 +1,16 @@
+@use '../../styles/abstract/' as a;
+
+.footer {
+  width: 100%;
+  height: a.rem(40);
+  margin-inline: auto;
+  background: var(--secondary-text);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2em;
+  @include a.breakpoint(tablet) {
+    flex-direction: row;
+    height: a.rem(40);
+  }
+}

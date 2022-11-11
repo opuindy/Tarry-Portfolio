@@ -1,0 +1,21 @@
+@use '../abstract/' as a;
+
+.generalLayout {
+  width: 100%;
+  min-height: calc(100vh - a.rem(100));
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: rem(20);
+  margin-bottom: 4em;
+  @include a.breakpoint(tablet) {
+    flex-direction: row;
+    min-height: 60vh;
+  }
+
+  @include a.breakpoint(desktop) {
+    flex-direction: row;
+    min-height: 70vh;
+  }
+}

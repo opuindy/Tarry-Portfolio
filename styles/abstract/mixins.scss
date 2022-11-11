@@ -1,0 +1,46 @@
+@use './breakpoints.scss';
+@use './function.scss';
+
+@mixin transition {
+  transition: all 0.35s ease-in;
+}
+
+@mixin layout {
+  width: 100%;
+  min-height: calc(100vh - 100px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-block-start: 3rem;
+  @include a.breakpoint(tablet) {
+    flex-direction: row;
+    min-height: 70vh;
+    row-gap: rem(20);
+  }
+}
+
+@mixin button {
+  height: 100%;
+  width: 100%;
+  padding: 0.5em;
+  padding-inline: 1em;
+  background: inherit;
+  outline: none;
+  border: none;
+  border-radius: inherit;
+  color: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  font-size: inherit;
+}
+
+@mixin textGradient {
+  background: var(--hamburgerColor);
+  background-clip: text;
+  -webkit-background-clip: text;
+  text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
+}

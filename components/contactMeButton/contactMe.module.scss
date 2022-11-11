@@ -1,0 +1,8 @@
+@use '../../styles/abstract/' as a;
+
+.button {
+  @include a.button;
+  &:hover {
+    cursor: pointer;
+  }
+}

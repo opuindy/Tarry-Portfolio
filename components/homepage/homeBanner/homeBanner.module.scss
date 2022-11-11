@@ -1,0 +1,95 @@
+@use '../../../styles/abstract/' as a;
+.info {
+  width: min(100%, a.rem(500));
+  min-height: calc(50vh - a.rem(50));
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  @include a.breakpoint(tablet) {
+    height: calc(90vh - a.rem(100));
+    align-items: flex-start;
+  }
+
+  &__greetingText {
+    font-size: clamp(a.rem(40), a.rem(16) + 6vw, a.rem(70));
+
+    @include a.breakpoint(tablet) {
+      margin-inline-end: auto;
+      margin-bottom: 0.3em;
+      text-align: left;
+    }
+  }
+
+  &__imoji {
+    font-size: clamp(a.rem(18), a.rem(16) + 6vw, a.rem(30));
+  }
+
+  &__paragraph,
+  &__paragraph2 {
+    display: flex;
+    text-align: center;
+    margin-bottom: 0.2em;
+    font-size: clamp(a.rem(18), a.rem(16) + 6vw, a.rem(28));
+
+    @include a.breakpoint(tablet) {
+      margin-inline: 0;
+      text-align: left;
+    }
+  }
+
+  &__paragraph2 {
+    font-size: clamp(a.rem(16), a.rem(16) + 6vw, a.rem(18));
+  }
+
+  &__span {
+    color: var(--secondary-text);
+    margin-left: 0.5em;
+  }
+
+  &__iconContainer {
+    margin-top: 2em;
+    width: max-content;
+    height: max-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @include a.breakpoint(tablet) {
+      margin-inline: 0;
+    }
+  }
+
+  &__buttonContainer {
+    margin-top: 2.3em;
+    width: 11rem;
+    height: 2.2rem;
+    background: var(--secondary-text);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: a.rem(5);
+    font-size: a.rem(15);
+
+    @include a.breakpoint(tablet) {
+      width: 13rem;
+      height: 2.5rem;
+    }
+
+    &__buttonContainer:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+.bannerImg {
+  width: min(100%, a.rem(550));
+  min-height: calc(50vh - a.rem(50));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @include a.breakpoint(tablet) {
+    height: calc(100vh - a.rem(100));
+  }
+}

@@ -1,0 +1,16 @@
+@use '../abstract/' as a;
+
+:root {
+  --secondary-text: hsl(176, 95%, 24%);
+  --primaryBackGround: hsl(132, 63%, 97%);
+  --secondaryBackgroundColor: hsl(155, 43%, 18%);
+  --background: hsl(0, 0%, 0%);
+  --text: hsl(137, 59%, 89%);
+  --hoverColor: hsl(176, 95%, 24%);
+  --hamburgerColor: hsl(359, 100%, 68%);
+  --tooltip-text-color: hsl(137, 59%, 89%);
+  --tooltip-background-color: hsl(176, 95%, 24%);
+  --tooltip-margin: a.rem(30);
+  --tooltip-arrow-size: a.rem(6);
+  --sec: rgb(78, 252, 246);
+}
