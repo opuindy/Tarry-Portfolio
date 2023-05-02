@@ -145,7 +145,7 @@ const Contact = () => {
               className={styles.formContainer__title}
               variants={childrenVariant}
             >
-              Get in touch &#128075;
+              Get in touch <span>&#128075;</span>
             </motion.h3>
             <motion.p
               className={styles.formContainer__paragraph}
@@ -153,8 +153,8 @@ const Contact = () => {
             >
               Thank you for taking the time to learn more about me and my skills
               as a web developer. If you have any questions or would like to
-              discuss potential projects, please don't hesitate to reach out via
-              -
+              discuss potential projects, please {`don't`} hesitate to reach out
+              via -
               <span className={styles.formContainer__email}>
                 opuindy@gmail.com
               </span>
