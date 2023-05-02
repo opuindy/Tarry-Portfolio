@@ -1,11 +1,15 @@
 @use '../abstract/' as a;
 
 :root {
-  --secondary-text: hsl(176, 95%, 24%);
-  --primaryBackGround: hsl(132, 63%, 97%);
+  --secondary-text: RGBA(245, 245, 245, 1);
+  --primaryBackGround: white;
   --secondaryBackgroundColor: hsl(155, 43%, 18%);
-  --background: hsl(0, 0%, 0%);
-  --text: hsl(137, 59%, 89%);
+  --typeWriterColor: RGBA(80, 80, 80, 1);
+  --background: RGBA(245, 245, 245, 1);
+  --text: RGBA(0, 0, 0, 1);
+  --Button: RGBA(36, 187, 182, 1);
+  --ButtonHover: RGBA(36, 187, 182, 0.8);
+  --ButtonColor: RGBA(24, 86, 83, 1);
   --hoverColor: hsl(176, 95%, 24%);
   --hamburgerColor: hsl(359, 100%, 68%);
   --tooltip-text-color: hsl(137, 59%, 89%);

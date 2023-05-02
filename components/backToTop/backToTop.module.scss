@@ -3,7 +3,7 @@
 .container {
   height: 2.5rem;
   width: 2.5rem;
-  background: var(--text);
+  background: var(--Button);
   position: fixed;
   top: 80vh;
   left: 85vw;
@@ -11,8 +11,8 @@
   z-index: 2;
 
   @include a.breakpoint(tablet) {
-    height: 3.5rem;
-    width: 3.5rem;
+    height: 3rem;
+    width: 3rem;
     left: 90vw;
   }
 

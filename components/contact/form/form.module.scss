@@ -41,6 +41,15 @@
     &:hover {
       cursor: pointer;
     }
+    margin-bottom: 2em;
+    @include a.breakpoint(tablet) {
+      margin-bottom: 1em;
+    }
+  }
+
+  button[disabled] {
+    cursor: not-allowed;
+    opacity: 0.3;
   }
 
   &__span {

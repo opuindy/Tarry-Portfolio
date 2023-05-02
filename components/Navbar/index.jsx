@@ -138,9 +138,6 @@ const Navbar = () => {
             <Image src={myLogo} className={styles.img} alt='logo' />
           </motion.div>
           <motion.div
-            variants={navBtnVariant}
-            initial='hidden'
-            animate='visible'
             whileTap={{ scale: 0.8 }}
             className={styles.menuBtn}
             onClick={() => setShowLinks(!showLinks)}
@@ -167,6 +164,7 @@ const Navbar = () => {
             initial='hidden'
             animate='visible'
             ref={linksRef}
+            className={styles[fixedNav.toString()]}
           >
             {links.map((linkItem) => {
               const { id, link, name } = linkItem;

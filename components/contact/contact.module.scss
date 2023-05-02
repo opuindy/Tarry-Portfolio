@@ -13,10 +13,11 @@
 
 .title {
   text-align: center;
-  margin-inline: auto;
+  margin-inline: 0 auto;
   margin-bottom: 0;
   font-size: clamp(a.rem(33), a.rem(16) + 2vw, a.rem(45));
   @include a.breakpoint(tablet) {
+    margin-inline: auto;
     margin-bottom: 1.5em;
   }
 }
@@ -86,17 +87,18 @@
 
   &__paragraph {
     font-size: clamp(a.rem(16), a.rem(16) + 6vw, a.rem(18));
+    text-align: left;
   }
 
   &__email {
-    color: var(--secondary-text);
+    color: var(--ButtonColor);
     font-weight: 700;
-    color: var(--secondary-text);
-    background: linear-gradient(to right, var(--secondary-text), var(--sec));
-    background-clip: text;
-    -webkit-background-clip: text;
-    text-fill-color: transparent;
-    -webkit-text-fill-color: transparent;
+    // color: var(--ButtonColor);
+    // background: linear-gradient(to right, var(--secondary-text), var(--sec));
+    // background-clip: text;
+    // -webkit-background-clip: text;
+    // text-fill-color: transparent;
+    // -webkit-text-fill-color: transparent;
   }
 
   &__form {
@@ -117,9 +119,7 @@
 
   &__title {
     font-size: clamp(a.rem(20), a.rem(16) + 2vw, a.rem(25));
-    text-align: center;
-    @include a.breakpoint(tablet) {
-      text-align: left;
-    }
+    text-align: left;
+    margin-right: auto;
   }
 }

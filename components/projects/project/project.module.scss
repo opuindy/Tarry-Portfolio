@@ -7,7 +7,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(to right, var(--secondary-text), var(--sec));
+  background: linear-gradient(to right, rgb(78, 252, 246), rgb(108, 238, 232));
   border-radius: a.rem(10);
 
   @include a.breakpoint(tablet) {
@@ -48,12 +48,9 @@
   }
 
   &__text {
-    font-size: clamp(a.rem(25), a.rem(16) + 2vw, a.rem(35));
-    // margin-bottom: 1em;
-    text-align: center;
-    @include a.breakpoint(tablet) {
-      text-align: left;
-    }
+    font-size: clamp(a.rem(13), a.rem(16) + 2vw, a.rem(32));
+    text-align: left;
+    margin-right: auto;
   }
 
   &__innerContainer {
@@ -69,36 +66,34 @@
   }
 
   &__textTitle {
-    font-size: clamp(a.rem(20), a.rem(16) + 2vw, a.rem(23));
+    font-size: clamp(a.rem(13), a.rem(16) + 2vw, a.rem(30));
     margin: 0;
-    text-align: center;
-    @include a.breakpoint(tablet) {
-      text-align: left;
-    }
+    text-align: left;
+    margin-right: auto;
   }
 
   &__paragraph {
-    font-size: clamp(a.rem(16), a.rem(16) + 6vw, a.rem(18));
-    text-align: center;
-    @include a.breakpoint(tablet) {
-      text-align: left;
-    }
+    font-size: clamp(a.rem(16), a.rem(16) + 6vw, a.rem(16.5));
+    text-align: left;
+    margin-top: 0.8em;
   }
 
   &__technologyList {
     padding-left: 0;
     list-style-type: none;
     display: flex;
+    justify-content: flex-start;
     flex-wrap: wrap;
     gap: 1em;
   }
 
   &__technologyUsed {
     padding: 0.5em;
-    padding-inline: 1em;
+    padding-inline: 0.8em;
     width: max-content;
     height: max-content;
-    background: var(--secondary-text);
+    background: var(--Button);
+    color: var(--secondary-text);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -121,8 +116,10 @@
     height: 2rem;
     width: 6.5rem;
     display: flex;
-    justify-content: space-between;
+    margin-right: auto;
+    justify-content: flex-start;
     align-items: center;
+    gap: 2em;
   }
 
   &__link {
@@ -131,12 +128,31 @@
     width: 2rem;
   }
 
-  &__imgBackground {
-    background-color: var(--text);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 2.3rem;
-    border-radius: 0.4em;
+  // &__imgBackground {
+  //   background-color: var(--text);
+  //   display: flex;
+  //   justify-content: center;
+  //   align-items: center;
+  //   width: 2.3rem;
+  //   border-radius: 0.4em;
+  // }
+}
+
+.icons {
+  width: 1.6rem;
+  height: 2rem;
+}
+
+.mobile {
+  display: block;
+  @include a.breakpoint(tablet) {
+    display: none;
+  }
+}
+
+.tablet {
+  display: none;
+  @include a.breakpoint(tablet) {
+    display: block;
   }
 }

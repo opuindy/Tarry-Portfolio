@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react';
 import styles from './project.module.scss';
 import Image from 'next/image';
 import Link from 'next/link';
+import { FiExternalLink } from 'react-icons/fi';
+import { BiCodeAlt } from 'react-icons/bi';
 import { motion, useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import browser from '../../../public/images/browser.png';
@@ -143,6 +145,10 @@ const Project = ({
       className={reverse() ? 'generalLayout' : 'reverseGeneralLayout'}
       ref={ref}
     >
+      <h3 className={`${styles.info__text} ${styles.mobile}`}>
+        {projectTitle}
+      </h3>
+
       <motion.div
         className={styles.imgContainer}
         variants={imageVariant}
@@ -166,7 +172,9 @@ const Project = ({
         animate={animation}
         // viewport={{ once: false, amount: 1 }}
       >
-        <h3 className={styles.info__text}>{projectTitle}</h3>
+        <h3 className={`${styles.info__text} ${styles.tablet}`}>
+          {projectTitle}
+        </h3>
         <motion.div
           className={styles.info__innerContainer}
           variants={infoChildrenVariant}
@@ -213,12 +221,13 @@ const Project = ({
                     delay='200'
                     direction=' down'
                   >
-                    <Image
+                    {/* <Image
                       src={browser}
                       width='100%'
                       height='100%'
                       alt='browser-logo'
-                    />
+                    /> */}
+                    <FiExternalLink className={styles.icons} />
                   </Tooltip>
                 </div>
               </a>
@@ -233,14 +242,15 @@ const Project = ({
               >
                 <Tooltip content='visit code' delay='200' direction=' down'>
                   <div className={styles.info__imgBackground}>
-                    <Image
+                    {/* <Image
                       src={promocode}
                       width='100%'
                       height='100%'
                       objectFit='contain'
                       className={styles.info__img}
                       alt='code logo'
-                    />
+                    /> */}
+                    <BiCodeAlt className={styles.icons} />
                   </div>
                 </Tooltip>
               </a>

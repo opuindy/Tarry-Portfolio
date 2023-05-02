@@ -102,6 +102,7 @@ const Form = () => {
           type='submit'
           className={styles.form__button}
           onClick={handleSubmit}
+          disabled
         >
           Send Message
         </button>

@@ -13,7 +13,10 @@
 
 .title {
   text-align: center;
-  margin-inline: auto;
+  margin-inline: 0 auto;
   margin-bottom: 1.5em;
   font-size: clamp(a.rem(33), a.rem(16) + 2vw, a.rem(45));
+  @include a.breakpoint(tablet) {
+    margin-inline: auto;
+  }
 }

@@ -151,11 +151,15 @@ const Contact = () => {
               className={styles.formContainer__paragraph}
               variants={childrenVariant}
             >
-              Got a question or proposal, or just want to say hello? Go ahead.
-              Submit the form below or shoot me an email -
+              Thank you for taking the time to learn more about me and my skills
+              as a web developer. If you have any questions or would like to
+              discuss potential projects, please don't hesitate to reach out via
+              -
               <span className={styles.formContainer__email}>
                 opuindy@gmail.com
               </span>
+              .<br />
+              Feel free to connect with me on LinkedIn, twitter or GitHub.
             </motion.p>
             <motion.div variants={childrenVariant}>
               <Form />

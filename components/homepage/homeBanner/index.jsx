@@ -96,7 +96,7 @@ const HomeBanner = () => {
   };
 
   return (
-    <section className='generalLayout'>
+    <section className={`${'generalLayout'} ${styles.modifiedlayout}`}>
       <motion.div
         className={styles.info}
         variants={infoVariant}
@@ -116,14 +116,14 @@ const HomeBanner = () => {
             <Typewriter
               options={{
                 strings: [
-                  `am Tarry Harcourt,`,
-                  `am a Frontend Developer.`,
-                  `am a problem solver.`,
-                  `enjoy bringing product ideas to life.`,
+                  `'m Tarry Harcourt.`,
+                  `'m a Frontend Developer.`,
+                  `'m a problem solver.`,
+                  ` enjoy bringing product ideas to life.`,
                 ],
                 autoStart: true,
                 loop: true,
-                typespeed: '1',
+                typespeed: '2 ',
               }}
             />
           </span>
@@ -132,8 +132,10 @@ const HomeBanner = () => {
           className={styles.info__paragraph2}
           variants={infoChildrenVariants}
         >
-          I am specialized in building exceptional digital experiences and
-          currently focused on building responsive front-end web applications.
+          {/* I am specialized in building exceptional digital experiences and
+          currently focused on building responsive front-end web applications. */}
+          I'm quite fascinated by the intersection of technology and design, and
+          dedicated to building exceptional digital experiences.
         </motion.p>
         <motion.div
           className={styles.info__iconContainer}
